@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Fashion</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "Quicksand", sans-serif;
+    }
+    header {
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .logo img {
+      width: 150px;
+      height: 80px;
+      object-fit: cover;
+      float: left;
+    }
+
+    nav {
+      max-width: 1000px;
+      margin: 10px auto;
+    }
+
+    nav ul {
+      float: right;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+    }
+
+    nav ul li a {
+      display: block;
+      text-decoration: none;
+      color: #000;
+      letter-spacing: 1px;
+      font-weight: 600;
+      padding: 10px 20px;
+      margin: 20px 0;
+    }
+
+    .imgCon {
+      width: 1200px;
+      height: 600px;
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+
+    figure {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    figure img {
+      width: 100%;
+      margin: 20px;
+    }
+
+    .imgCon .img1 {
+      grid-row: 1 / span 4;
+      grid-column: 1 / span 5;
+    }
+
+    .imgCon .img2 {
+      grid-row: 1 / span 2;
+      grid-column: 6 / span 8;
+    }
+
+    .imgCon .img3 {
+      grid-row: 3 / span 2;
+      grid-column: 6 / span 4;
+    }
+
+    .imgCon .img4 {
+      grid-row: 3 / span 2;
+      grid-column: 10 / span 4;
+    }
+
+    .imgCon .img1 img {
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .imgCon .img2 img {
+      height: 290px;
+      object-fit: cover;
+    }
+
+    .imgCon .img3 img {
+      height: 290px;
+      object-fit: cover;
+    }
+
+    .imgCon .img4 img {
+      height: 290px;
+      object-fit: cover;
+    }
+  </style>
+
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="img/logo.jpg" alt="" />
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li>
+            <a href="#"><i class="fa fa-shopping-bag"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fa fa-search"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="imgCon">
+      <figure class="imgBlock img1">
+        <img src="img/h3.jpg" alt="" />
+      </figure>
+      <figure class="imgBlock img2">
+        <img src="img/h4.jpg" alt="" />
+      </figure>
+      <figure class="imgBlock img3">
+        <img src="img/h1.jpg" alt="" />
+      </figure>
+      <figure class="imgBlock img4">
+        <img src="img/h2.jpg" alt="" />
+      </figure>
+    </div>
+  </body>
+</html>
